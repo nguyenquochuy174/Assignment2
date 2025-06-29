@@ -6,6 +6,15 @@ public class Calculator {
         switch (sign) {
             case minus:
                 return arg1 - arg2;
+            case plus:
+                return arg1 + arg2;
+            case divide:
+                if (arg2 == 0) {
+                    throw new IllegalArgumentException("Cannot divide by zero");
+                }
+                return arg1 / arg2;
+            case multiply:
+                return arg1 * arg2;
             default:
                 break;
         }
