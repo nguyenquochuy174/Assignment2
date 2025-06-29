@@ -13,6 +13,8 @@ public class Calculator {
                     throw new IllegalArgumentException("Cannot divide by zero");
                 }
                 return arg1 / arg2;
+            case multiply:
+                return arg1 * arg2;
             default:
                 break;
         }
